@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VTU Departments</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        header img {
+            width: 1100px;
+            height: 250px;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0066cc;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        .departments {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .department {
+            width: 30%;
+            margin: 15px 0;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .department img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .department button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .department button:hover {
+            background-color: #0066cc;
+        }
+        .details-section {
+            display: none;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="file:///C:/Users/yashu162002/OneDrive/Documents/codings/2023-11-25.webp" alt="VTU Logo">
+        <h1>VISVESVARAYA TECHNOLOGICAL UNIVERSITY BELAGAVI</h1>
+        <h2>UNIVERSITY OF BDT COLLEGE</h2>
+        <H3>DAVANGERE 577002</H3>
+    </header>
+
+    <nav>
+        <a href="#about">Achivements</a>
+        <a href="#departments">Contact</a>
+        <a href="#contact">About us</a>
+    </nav>
+
+    <section id="departments">
+        <h2>Our Department</h2>
+        <div class="departments">
+            <div class="department">
+                <img src="file:///C:/Users/yashu162002/OneDrive/Documents/codings/pngtree-4k-hd-desktop-desktop-computer-render-picture-image_2875812.jpg" alt="MCA Department">
+                <h3>MCA</h3>
+                <p>Master of Computer Applications</p>
+                <button onclick="showStudentList()">Student List</button>
+                <button onclick="showTimetable()">Class Timetable</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="student-list" class="details-section">
+        <button onclick="goBack()">Back</button>
+        <h2>MCA - Student List</h2>
+        <button onclick="showSection('A')">Section A</button>
+        <button onclick="showSection('B')">Section B</button>
+        
+        <div id="sectionA" class="student-section">
+            <h3>Section A</h3>
+            <Ol>
+<li>ABHISHEK A</li>
+<li>ABHISHEK U B</li>
+<li>ADARSHA R</li>
+<li>AISHWARYA BK</li>
+<li>ALMAS BANU D</li>
+<li>ANIL KP</li>
+<li>ANJANA CM</li>
+<li>ANUGRAHA SK</li>
+<li>ANUSHA BM</li>
+<li>ARCHANA GOSIKERE M S</li>
+<li>ASHOK GANDHI MR</li>
+<li>BH DEEPA</li>
+<li>B SWAGATH</li>
+<li>BHOOMIKA B</li>
+<li>BHOOMIKA KS</li>
+<li>BHOOMIKA V T</li>
+<li>BHUMIKA S</li>
+<li>BHUVAN R</li>
+<li>BHUVANA KS</li>
+<li>CHANDAN GN</li>
+<li>CHANDANA K</li>
+<li>CHETHAN J</li>
+<li>CHETHAN NB</li>
+<li>DEEPASHREE B M</li>
+<li>DIVYA DS</li>
+<li>GAGAN R</li>
+<li>GONDI SHANKRAMMA</li>
+<li>GURUNATH PN</li>
+<li>H VEERESHWARA</li>
+<li>HABIBA AIMAN I</li>
+<li>HIMA P</li>
+<li>JAYACHANDRA ET</li>
+<li>KALLESH DR</li>
+<li>KANCHANA BS</li>
+<li>KAVYA R</li>
+<li>KAVYA S MADARA</li>
+<li>KEERTHANACB</li>
+<li>KEERTHANA ΚΡ</li>
+<li>KRUTHIKADR</li>
+<li>KUSUMA P</li>
+<li>LAKSHMI H</li>
+<li>LAKSHMI PN</li>
+<li>LATHA PRAKASHA KUMBARA</li>
+<li>LAVANYA SD</li>
+<li>LAXMI H KAREGOUDRA</li>
+<li>MANJULA SG</li>
+<li>MANOJ HALAGERI</li>
+<li>MANOJ SAGARAHM</li>
+<li>MANOJ TN</li>
+<li>MEGHA HM</li>
+            </ol>
+        </div>
+        
+        <div id="sectionB" class="student-section">
+            <h3>Section B</h3>
+            <ol>
+<li>MEGHARAJ A C</li>
+<li>NAGARAJ RAVINDRARADDI K</li>
+<li>NAMEERA MEHTAB</li>
+<li>NAYANAG C</li>
+<li>NEHA</li>
+<li>NIKHIL PASARAD</li>
+<li>NIRMALA P SHIDENUR</li>
+<li>NISHCHITHA B J</li>
+<li>NITHIN KS</li>
+<li>NIVEDITHAN U</li>
+<li>PAVAN KALYANA</li>
+<li>PRAMOD SAVADATTI</li>
+<li>PRAVEEN C HOSAKERI</li>
+<li>PREETHI EG</li>
+<li>PRIYANKA R</li>
+<li>RACHITHA B G</li>
+<li>RAGHAVENDRA M DODMANI</li>
+<li>B RAMYA KM</li>
+<li>RAMYA YK</li>
+<li>RANJANA HB</li>
+<li>RANJITH P</li>
+<li>SAHANA BH</li>
+<li>SAHANA GR</li>
+<li>SANGEETHAGS</li>
+<li>SARIA ALAIN A</li>
+<li>SATEESH S KAREGOUDRA</li>
+<li>SEJAL M RAIKAR</li>
+<li>SHABANAMI</li>
+<li>SHALINIS</li>
+<li>SHARATH KUMAR M B</li>
+<li>SHIVARAJ DODDAGOUDRA</li>
+<li>SHREEJA L</li>
+<li>SHREYA RM</li>
+<li>SHWETHA H</li>
+<li>SIDDESH H</li>
+<li>SINDHU V</li>
+<li>SOUMYASHRIMP</li>
+<li>SRIDHAR PATIL M</li>
+<li>SUCHITRA S</li>
+<li>SWAPNA KR</li>
+<li>UMESHA A S</li>
+<li>VAISHNAVI N JOSHI</li>
+<li>VARSHA DT</li>
+<li>VARSHININ V</li>
+<li>VARUN KUMAR JA</li>
+<li>VEDASHREE S BAGALAKOTI</li>
+<li>VEENA V GOVINALMATH</li>
+<li>VINAY JD</li>
+<li>VINAY KP</li>
+<li>VISHAL</li>
+<li>YASHAVANTH T</li>
+<li>YASHWANTH DS</li>
+<li>YASMEEN TAJK</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="timetable" class="details-section">
+        <button onclick="goBack()">Back</button>
+        <h2>MCA - Class Timetable</h2>
+        <table>
+            <tbody>
+               <tr>
+                    <th>Time/Day</th>
+                    <th>SEM/Section</th>
+                    <th>9:00 to 10:00</th>
+                    <th>10:00 to 10:15</th>
+                    <th>10:15 to 11:15</th>
+                    <th>11:15 to 12:15</th>
+                    <th>12:15 to 2:00</th>
+                    <th>2:00 to 3:00</th>
+                    <th>3:00 to 4:00</th>
+                    <th>4:00 to 5:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MON</td>
+                    <td>I B</td>
+                    <td>WT (CGS)</td>
+                    <td>BREAK</td>
+                    <td>OS (NG)</td>
+                    <td>C (A1)</td>
+                    <td>LUNCH</td>
+                    <td>DM (VB)</td>
+                    <td>DBMS (A2)</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>TUE</td>
+                    <td>I B</td>
+                    <td>C (A1)</td>
+                    <td>BREAK</td>
+                    <td>DBMS (A2)</td>
+                    <td>OS (NG)</td>
+                    <td>LUNCH</td>
+                    <td>C (A1)</td>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>WED</td>
+                    <td>I B</td>
+                    <td>DM (VB)</td>
+                    <td>BREAK</td>
+                    <td>DBMS (A2)</td>
+                    <td>WT (CGS)</td>
+                    <td>LUNCH</td>
+                    <td>OS (NG)</td>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>THU</td>
+                    <td>I B</td>
+                    <td>--</td>
+                    <td>BREAK</td>
+                    <td>--</td>
+                    <td>DM (VB)</td>
+                    <td>LUNCH</td>
+                    <td>--</td>
+                    <td>LAB</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>FRI</td>
+                    <td>I B</td>
+                    <td>--</td>
+                    <td>BREAK</td>
+                    <td>LAB</td>
+                    <td>LAB</td>
+                    <td>LUNCH</td>
+                    <td>LAB</td>
+                    <td>LAB</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>SAT</td>
+                    <td>I B</td>
+                    <td colspan="9">Tutorial / Forum Activities</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DONE BY YASHAVANTH T. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showStudentList() {
+            document.getElementById('departments').style.display = 'none';
+            document.getElementById('student-list').style.display = 'block';
+        }
+
+        function showTimetable() {
+            document.getElementById('departments').style.display = 'none';
+            document.getElementById('timetable').style.display = 'block';
+        }
+
+        function goBack() {
+            document.getElementById('student-list').style.display = 'none';
+            document.getElementById('timetable').style.display = 'none';
+            document.getElementById('departments').style.display = 'block';
+        }
+
+        function showSection(section) {
+            
+            document.getElementById('sectionA').style.display = 'none';
+            document.getElementById('sectionB').style.display = 'none';
+
+            
+            if (section === 'A') {
+                document.getElementById('sectionA').style.display = 'block';
+            } else if (section === 'B') {
+                document.getElementById('sectionB').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
